@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>jQuery Mobile App</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquerymobile.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquerymobile.js"></script>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<section data-role="page" id="home">
+			<!-- <header data-theme="b" data-role="header">
+				<h1>App</h1>
+			    <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header> -->
+			<article data-role="content">
+				<!-- <img src="images/linked.jpg"> -->
+				<h1 id="mobileHeader">Mobile App</h1>
+				<p id="me">By: Kyle Anderson</p>
+				<div data-role="controlgroup">
+					<a href="#blog" class="ui-btn ui-nodisc-icon ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-b">Blog</a>
+					<a href="#videos" class="ui-btn ui-nodisc-icon ui-icon-video ui-btn-icon-left ui-corner-all ui-btn-b">Videos</a>
+					<a href="#photos" class="ui-btn ui-nodisc-icon ui-icon-camera ui-btn-icon-left ui-corner-all ui-btn-b">Photos</a>
+					<a href="#tweets" class="ui-btn ui-nodisc-icon ui-icon-comment ui-btn-icon-left ui-corner-all ui-btn-b">Tweets</a>
+				</div>
+			</article> <!-- content -->  
+		</section><!-- home page --> 
+		<!-- blog page -->
+		<section data-role="page" class="header_default footer_default" id="blog" data-title="Blog">
+			<div data-role="content" id="postlist">
+			</div> <!-- content -->
+		</section> <!-- blog page -->
+		<!-- blog post page -->
+		<section data-role="page" data-title="Posts" class="header_default footer_default" id="blogpost">
+			<div data-role="content">
+				<div id="mypost"></div>
+			</div>
+		</section> <!-- blogpost page -->
+		<section data-role="page" data-title="Videos" class="header_default footer_default" id="videos">
+			<div data-role="content">
+				<div class="ui-grid-a" id="videolist"></div>
+			</div>
+		</section> <!-- videos page -->
+		<section id="videoplayer" data-role="page" class="header_default footer_default" data-title="Video Player">
+			<div data-role="content"> 
+				<div id="player"></div>
+			</div>
+		</section> <!-- main video -->
+		<section id="photos" data-role="page" class="header_default footer_default" data-title="Photos">
+			<div data-role="content">
+				<div id="photolist" class="ui-grid-c"></div> <!-- within this div is 4 columns from js page -->
+			</div>
+		</section> <!-- listing all photos from flickr -->
+		<section id="photo_main" data-role="page" class="header_default footer_default" data-title="Main Photo" >
+			<div data-role="content">
+				<div id="single_photo"></div>
+			</div>
+		</section> <!-- clicked on photo -->
+		<section id="tweets" data-role="page" class="header_default footer_default" data-title="Tweets">
+			<div data-role="content" id="listtweets">
+			</div>
+		</section>  <!--  tweets -->
+		<section id="dialog" data-role="dialog">
+			<header data-role="header"><h1>More Info</h1></header>
+				<div data-role="content">
+					<h1><u>About App</u></h1>
+					<h3>Wordpress API</h3>
+					<h3>Youtube API</h3>
+					<h3>Flickr API</h3>
+					<h3>Twitter API</h3>
+					<p>Go to http://kyleande.com for more projects</p>
+				</div>
+
+		</section>
+		<!-- <header data-theme="b" data-role="header">
+			<h1></h1>
+			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back">Back</a>
+			<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+		</header> -->	
+		<script src="js/script.js"></script>
+		 <!-- <script src="http://www.youjustgotclowned.com/clowned/there/blog/?json=1&count=10&callback=listPosts"></script> -->
+		
+		 <script src="http://www.trulaunch.com/?json=1&count=10/?json=1&count=10&callback=listPosts"></script>
+
+		<script src="http://gdata.youtube.com/feeds/users/arminvanbuuren/uploads?alt=json&max-results=20&callback=listVideos"></script>
+
+		  <script src="http://api.flickr.com/services/feeds/photos_public.gne?id=122700583@N02&format=json"></script>
+
+		  <!-- <script src="http://api.flickr.com/services/feeds/photos_public.gne?id=68764490@N07&format=json"></script> --> <!-- trulaunch -->
+
+		  <script src="http://mranderson.co/app/tweets_json.php?count=18&callback=listAllTweets"></script>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+#home .ui-controlgroup {
+	width: 70%;
+	margin: 0 auto; 
+	max-width: 200px;
+}
+
+#home img {
+	width: 100%;
+	max-width: 380px;
+	display: block;
+	margin: 0 auto; 
+}
+
+#home, #blog, #photos, #videos, #tweets {
+	background: url('../images/sand.png') 
+	/*background: white;*/
+}
+
+#mobileHeader {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+#me {
+	text-align: center;
+}
+
+#videolist h3 {
+	margin: 15px 0 5px 0;
+	height: 40px;
+	overflow: hidden;
+	font-size: 0.9em;
+	color: #000000;
+	font-weight: 300;
+}
+
+#videolist img {
+	display: block;
+	width: 90%;
+	webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#videoplayer .ui-content {
+	margin: 0;
+	padding: 0;
+}
+
+iframe {
+	width: 100%;
+}
+
+#videoplayer iframe {
+	width: 100%;
+	min-height: 50%;  /*makes it 50% of the page */
+}
+
+#videoplayer h3, #player p {
+	padding: 0 5%; /*5 % of the sides*/
+	/*or padding-top, padding-bottom: 0;*/
+}
+
+#photolist .ui-grid-c { /*overall grid */
+	max-width: 675px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#photolist .ui-block-a, 
+#photolist .ui-block-b, 
+#photolist .ui-block-c, 
+#photolist .ui-block-d {
+	width: 23%;
+	margin: 1%;
+}
+
+#photolist img {
+	width: 100%; /*always a 100 percent of 23%*/
+	webkit-border-radius: 10px;
+	moz-border-radius: 10px;
+	border-radius: 10px;
+	float: left; /*gets rid of extra space*/
+}
+
+
+
+#photo_main {
+	background: rgba(0,0,0,.7);
+	/*background: green;*/
+}
+
+#photo_main .ui-content {
+	width: 100%;
+	padding: 0;
+}
+
+#photo_main img {
+	width: 100%;
+	padding: 0;
+}
+
+#listtweets .ui-listview li{
+	background: #EEE;
+	color: #666;
+	font-weight: 300;
+	white-space: normal;
+	border-top: 1px solid rgba(151, 143, 143, 0.51);
+	padding-top: 10px;
+}
+
+#listtweets .ui-listview>li p {
+	white-space: normal;
+}
+
+#listtweets .ui-listview li img {
+	/*margin-top: 3px;*/
+}
+#listtweets .ui-listview {
+	color: #555555;
+}
+
+#listtweets img {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/*margin: 10px;*/
+	margin-left: 10px;
+
+}
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+	font-weight: 0px;
+}
+
+
+.ui-link {
+	text-decoration: none;
+}
