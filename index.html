@@ -27,6 +27,7 @@
 					<a href="#videos" class="ui-btn ui-nodisc-icon ui-icon-video ui-btn-icon-left ui-corner-all ui-btn-b">Videos</a>
 					<a href="#photos" class="ui-btn ui-nodisc-icon ui-icon-camera ui-btn-icon-left ui-corner-all ui-btn-b">Photos</a>
 					<a href="#tweets" class="ui-btn ui-nodisc-icon ui-icon-comment ui-btn-icon-left ui-corner-all ui-btn-b">Tweets</a>
+					<a href="#blogspot" class="ui-btn ui-nodisc-icon ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-b">BlogSpot</a>
 				</div>
 			</article> <!-- content -->  
 		</section><!-- home page --> 
@@ -65,6 +66,10 @@
 			<div data-role="content" id="listtweets">
 			</div>
 		</section>  <!--  tweets -->
+		<section id="blogspot" data-role="page" class="header_default footer_default" data-title="Blogger">
+			<div data-role="content" id="bloggerList">
+			</div> <!-- content -->
+		</section> <!-- main blogger -->
 		<section id="dialog" data-role="dialog">
 			<header data-role="header"><h1>More Info</h1></header>
 				<div data-role="content">
@@ -94,5 +99,8 @@
 		  <!-- <script src="http://api.flickr.com/services/feeds/photos_public.gne?id=68764490@N07&format=json"></script> --> <!-- trulaunch -->
 
 		  <script src="http://mranderson.co/app/tweets_json.php?count=18&callback=listAllTweets"></script>
+
+		  <script
+    src="https://www.googleapis.com/blogger/v3/blogs/6843001766402912247/posts?count=22&callback=blogger&key={need key here}"></script>
 	</body>
 </html>

@@ -181,3 +181,32 @@ function listAllTweets(data) {
 	}
 	$('#listtweets').html(output);
 }
+
+function blogger(data) {
+    	// body...
+    	console.log(data);
+    	var output = "<form class='ui-filterable'><input id='searchposts' data-type='search'></form>";
+		output += "<ul data-role='listview' data-filter='true' data-input='#searchposts'>";
+		for(var i = 0; i < data.items.length; i++) {
+			var title = data.items[i].title
+			var excerpt = data.items[i].content.substring(0,60);
+			var content = data.items[i].content;
+			var blog_id = data.items[i].id;
+			output += '<li>';
+			output += '<a href="#blogpost" onclick = "showBloggerPosts('+ blog_id +')">';;
+			output += '<h3>' + title + '</h3>';
+			output += '<p>' + excerpt + '<p>';
+			output += '</a>';
+			output += '<li>';
+		}
+			output += '</ul>';
+			console.log(output);
+			$("#bloggerList").html(output);
+    }
+
+function showBloggerPosts(blog_id){
+	//www.googleapis.com/blogger/v2/blogs/blogId/posts/postId
+	$.getJSON("www.googleapis.com/blogger/v3/blogs/6843001766402912247/posts="+blog_id+"&callback=?", function(data) {
+		console.log(data);
+	});
+}
