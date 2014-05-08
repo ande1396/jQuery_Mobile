@@ -1,3 +1,14 @@
+// $(document).ready(function(){
+// 	$(document).on("pageshow", "[data-role='page']", function() {
+// 		// console.log($(this));
+// 		if($(this).hasClass('active')){
+// 			$(this).footer.addClass('ui-btn-active');
+// 			
+// 		}
+// 	});
+
+// });
+
 function listPosts(data) {
 	console.log(data);
 	var output = "<form class='ui-filterable'><input id='searchposts' data-type='search'></form>";
@@ -169,7 +180,7 @@ function blogger(data) {
 			output += '<li>';
 			// output += '<a href="#blogspot_post" onclick = "showBloggerPosts('+ blog_id +')">';
 
-			output += '<a href="#blogspot_post" onclick = "showBloggerPosts('+ title +')">';
+			output += '<a href="#blogspot_post" onclick = "showBloggerPosts('+ blog_id +')">';
 			output += '<h3>' + title + '</h3>';
 			output += '<p>' + excerpt + '<p>';
 			output += '</a>';
@@ -181,7 +192,6 @@ function blogger(data) {
     }
 
 function showBloggerPosts(blog_id) {
-	console.log(blog_id);
 	$.getJSON("https://www.googleapis.com/blogger/v3/blogs/6843001766402912247/posts/"+blog_id+"?key=AIzaSyAjLc_XcGyeFptoRyXNHlUzDGBA79B1alE", function(data) {
 	 	var content = data.content;
 	 	var date = data.updated; 
