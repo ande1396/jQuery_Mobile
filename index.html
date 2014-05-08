@@ -13,11 +13,6 @@
 	</head>
 	<body>
 		<section data-role="page" id="home">
-			<!-- <header data-theme="b" data-role="header">
-				<h1>App</h1>
-			    <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
-				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
-			</header> -->
 			<article data-role="content">
 				<!-- <img src="images/linked.jpg"> -->
 				<h1 id="mobileHeader">Mobile App</h1>
@@ -30,46 +25,199 @@
 					<a href="#blogspot" class="ui-btn ui-nodisc-icon ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-b">BlogSpot</a>
 				</div>
 			</article> <!-- content -->  
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section><!-- home page --> 
 		<!-- blog page -->
-		<section data-role="page" class="header_default footer_default" id="blog" data-title="Blog">
+		<section data-role="page"  id="blog">
+			<header data-theme="b" data-role="header">
+				<h1>Blog</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content" id="postlist">
 			</div> <!-- content -->
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top ui-btn-active">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
+
 		</section> <!-- blog page -->
 		<!-- blog post page -->
-		<section data-role="page" data-title="Posts" class="header_default footer_default" id="blogpost">
+		<section data-role="page" id="blogpost">
+			<header data-theme="b" data-role="header">
+				<h1>Blog Post</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content">
 				<div id="mypost"></div>
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- blogpost page -->
-		<section data-role="page" data-title="Videos" class="header_default footer_default" id="videos">
+		<section data-role="page" id="videos">
+			<header data-theme="b" data-role="header">
+				<h1>Videos</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content">
 				<div class="ui-grid-a" id="videolist"></div>
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top ui-btn-active">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- videos page -->
-		<section id="videoplayer" data-role="page" class="header_default footer_default" data-title="Video Player">
+		<section id="videoplayer" data-role="page"  data-title="Video Player">
+			<header data-theme="b" data-role="header">
+				<h1>Video</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content"> 
 				<div id="player"></div>
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- main video -->
-		<section id="photos" data-role="page" class="header_default footer_default" data-title="Photos">
+		<section id="photos" data-role="page"  data-title="Photos">
+			<header data-theme="b" data-role="header">
+				<h1>Photos</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content">
 				<div id="photolist" class="ui-grid-c"></div> <!-- within this div is 4 columns from js page -->
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top ui-btn-active">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- listing all photos from flickr -->
-		<section id="photo_main" data-role="page" class="header_default footer_default" data-title="Main Photo" >
+		<section id="photo_main" data-role="page"  data-title="Main Photo" >
+			<header data-theme="b" data-role="header">
+				<h1>Main Photo</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content">
 				<div id="single_photo"></div>
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- clicked on photo -->
-		<section id="tweets" data-role="page" class="header_default footer_default" data-title="Tweets">
+		<section id="tweets" data-role="page">
+			<header data-theme="b" data-role="header">
+				<h1>Tweets</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content" id="listtweets">
 			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed"> <!-- fixed makes it always at the bottom -->
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top ui-btn-active">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section>  <!--  tweets -->
-		<section id="blogspot" data-role="page" class="header_default footer_default" data-title="Blogger">
+
+
+		<section id="blogspot" data-role="page">
+			<header data-theme="b" data-role="header">
+				<h1>Blogger</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
 			<div data-role="content" id="bloggerList">
 			</div> <!-- content -->
+			<footer data-theme="b" data-role="footer" data-position="fixed"> <!-- fixed makes it always at the bottom -->
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+						<li><a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+						<li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top">Videos</a></li>
+						<li><a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+						<li><a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-top ui-btn-active">Tweets</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</section> <!-- main blogger -->
+
+		<section id="blogspot_post" data-role="page">
+			<header data-theme="b" data-role="header">
+				<h1>Blogger 2</h1>
+			    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home">Home</a>
+				<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
+			</header>
+			<div data-role="content">
+				<div id="single_blogger"></div>
+			</div> <!-- end of content -->
+		</section> <!-- end of blogspot_post -->
 		<section id="dialog" data-role="dialog">
 			<header data-role="header"><h1>More Info</h1></header>
 				<div data-role="content">
@@ -80,17 +228,12 @@
 					<h3>Twitter API</h3>
 					<p>Go to http://kyleande.com for more projects</p>
 				</div>
-
 		</section>
-		<!-- <header data-theme="b" data-role="header">
-			<h1></h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back">Back</a>
-			<a href="#dialog" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info">Info</a>
-		</header> -->	
+
 		<script src="js/script.js"></script>
 		 <!-- <script src="http://www.youjustgotclowned.com/clowned/there/blog/?json=1&count=10&callback=listPosts"></script> -->
 		
-		 <script src="http://www.trulaunch.com/?json=1&count=10/?json=1&count=10&callback=listPosts"></script>
+		  <script src="http://www.trulaunch.com/?json=1&count=10/?json=1&count=10&callback=listPosts"></script>
 
 		<script src="http://gdata.youtube.com/feeds/users/arminvanbuuren/uploads?alt=json&max-results=20&callback=listVideos"></script>
 
@@ -99,8 +242,8 @@
 		  <!-- <script src="http://api.flickr.com/services/feeds/photos_public.gne?id=68764490@N07&format=json"></script> --> <!-- trulaunch -->
 
 		  <script src="http://mranderson.co/app/tweets_json.php?count=18&callback=listAllTweets"></script>
+		  <script src="https://www.googleapis.com/blogger/v3/blogs/6843001766402912247/posts?&callback=blogger&key=AIzaSyAjLc_XcGyeFptoRyXNHlUzDGBA79B1alE">
+		  </script>
 
-		  <script
-    src="https://www.googleapis.com/blogger/v3/blogs/6843001766402912247/posts?count=22&callback=blogger&key={need key here}"></script>
-	</body>
+  </body>
 </html>
